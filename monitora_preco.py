@@ -1,7 +1,6 @@
 import urllib.request
 import yagmail
 import os
-import getpass
 from time import sleep
 
 
@@ -32,7 +31,7 @@ if __name__ == "__main__":
     else:
         arquivo = open("dados.txt", "w", encoding="utf-8")
         arquivo.write(input("Digite o seu email: ") + " ")
-        senha = getpass.getpass("Digite a senha: ")
+        senha = input("Digite a senha: ")
         arquivo.write(f"{senha}\n")
         qtd_destinatarios = int(input("Deseja enviar a oferta para quantos destinatários? "))
         for i in range(qtd_destinatarios):
