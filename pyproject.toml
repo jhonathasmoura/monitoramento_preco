@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.8"
 black = "^22.10.0"
+yagmail = "^0.15.293"
 
 
 [tool.poetry.group.dev.dependencies]
